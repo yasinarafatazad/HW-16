@@ -1,0 +1,163 @@
+/* Common Css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin:  0 auto;
+}
+/* Navbar Part */
+#navbar{
+    padding: 40px 0;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    padding: 40px 0;
+}
+.nav-item ul{
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 60px 0;
+}
+.nav-item ul li a{
+    padding: 0 15px 0 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300px;
+    font-size: 14px;
+    color: #fff;
+    transition: all linear 0.3s;
+}
+.nav-item ul li:nth-child(8) a{
+    padding-right: 0;
+    
+}
+.nav-item ul li a:hover{
+    color: #c7b299;
+}
+/* Banner */
+#banner{
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 380px 0;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+#banner:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+}
+.banner-details h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500px;
+    font-size: 36px;
+    color: #fff;
+}
+.banner-details h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800px;
+    font-size: 52px;
+    color: #fff;
+}
+.banner-details p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300px;
+    font-size: 16px;
+    color: #fff;
+    width: 550px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.bnr-btn{
+    padding: 20px 40px;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800px;
+    font-size: 14px;
+    background: #988574;
+    border: none;
+    box-shadow: 0 3px 0 0 #726257;
+}
+
+/* Service */
+#service{
+    text-align: center;
+    padding: 80px 0;
+}
+.service-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.srvc-sctn{
+    width: 280px;
+    position: relative;
+}
+.srvc-sctn i{
+    color: #555;
+    font-size: 30px;
+    padding-bottom: 30px;
+    transition: all linear 0.3s;
+}
+.srvc-sctn h3{
+    color: #555;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600px;
+    font-size: 22px;
+    transition: all linear 0.3s;
+}
+.srvc-sctn p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300px;
+    font-size: 14px;
+    color: #8c8c8c;
+    padding-bottom: 33px;
+}
+.srvc-sctn:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,100%);
+    width: 70px;
+    height: 3px;
+    background: #f1eee9;
+    transition: all linear 0.3s;
+}
+.srvc-sctn:hover h3{
+    color: #c7b199;
+}
+.srvc-sctn:hover i{
+    color: #c7b199;
+}
+.srvc-sctn:hover::after{
+    background: #c7b199;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
